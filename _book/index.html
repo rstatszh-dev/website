@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.4.549">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Lars Schöbitz">
+<meta name="dcterms.date" content="2024-08-13">
+
+<title>rstatsZH</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./module.html" rel="next">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+</head>
+
+<body class="nav-sidebar floating">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./index.html">Willkommen</a></li></ol></nav>
+        <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">rstatsZH</a> 
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Willkommen</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./module.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Module (noch nicht finalisiert)</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./references.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">References</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#willkommen" id="toc-willkommen" class="nav-link active" data-scroll-target="#willkommen">Willkommen</a></li>
+  <li><a href="#zielgruppe" id="toc-zielgruppe" class="nav-link" data-scroll-target="#zielgruppe">Zielgruppe</a>
+  <ul class="collapse">
+  <li><a href="#anna" id="toc-anna" class="nav-link" data-scroll-target="#anna">Anna</a></li>
+  <li><a href="#carlos" id="toc-carlos" class="nav-link" data-scroll-target="#carlos">Carlos</a></li>
+  <li><a href="#fatima" id="toc-fatima" class="nav-link" data-scroll-target="#fatima">Fatima</a></li>
+  <li><a href="#thomas" id="toc-thomas" class="nav-link" data-scroll-target="#thomas">Thomas</a></li>
+  </ul></li>
+  <li><a href="#lernziele" id="toc-lernziele" class="nav-link" data-scroll-target="#lernziele">Lernziele</a></li>
+  <li><a href="#abschliessende-beurteilung" id="toc-abschliessende-beurteilung" class="nav-link" data-scroll-target="#abschliessende-beurteilung">Abschliessende Beurteilung</a></li>
+  <li><a href="#zeitaufwand" id="toc-zeitaufwand" class="nav-link" data-scroll-target="#zeitaufwand">Zeitaufwand</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">rstatsZH</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Lars Schöbitz </p>
+          </div>
+  </div>
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">August 13, 2024</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="willkommen" class="level1 unnumbered">
+<h1 class="unnumbered">Willkommen</h1>
+<p>Willkommen zu rstatsZH - Data Science mit R. Dieser Kurs richtet sich an Mitarbeiter:innen der Verwaltung des Kantons Zürich. Die Kosten für den Kurs betragen 1950.00 CHF pro Person für ein 14-wöchiges Programm mit einem Gesamtaufwand von etwa 50 Stunden. Das gesamte Programm wird online mittels Zoom Videokonfernzen durchgeführt.</p>
+<p>Seit 2021 wird der Kurs jeweils im März und September durch das Statistische Amt Kanton Zürich angeboten. Im Jahr 2024 wurde der Kurs nach 8 Durchführungen überarbeitet und auf den neuesten Stand gebracht. Der Kurs wird von Lars Schöbitz, Lars Schöbitz GmbH, entwickelt und durchgeführt.</p>
+</section>
+<section id="zielgruppe" class="level1">
+<h1>Zielgruppe</h1>
+<p>Die folgenden Learner Personas <span class="citation" data-cites="wilson2019teaching">(<a href="references.html#ref-wilson2019teaching" role="doc-biblioref">Wilson 2019</a>)</span> beschreiben für welche Zielgruppe dieser Kurs konzipiert wurde. Falls du dich nicht in einer der folgenden Personas wiederfindest, ist das kein Problem. Der Kurs ist generell für Beginner:innen konzipiert für alle Personen geeignet, die Interesse an der Datenanalyse mit R haben und ihre Fähigkeiten in diesem Bereich aufbauen möchten.</p>
+<section id="anna" class="level2">
+<h2 class="anchored" data-anchor-id="anna">Anna</h2>
+<p><strong>Allgemeiner Hintergrund:</strong></p>
+<p>Anna ist eine 36-jährige Projektmanagerin im Gesundheitsamt der Kantonsregierung. Sie hat einen Master-Abschluss in Public Health und arbeitet seit über einem Jahrzehnt im öffentlichen Sektor. Zu ihren Aufgaben gehört die Koordination verschiedener Gesundheitsinitiativen und die Evaluierung von Programmergebnissen.</p>
+<p><strong>Relevantes Vorwissen:</strong></p>
+<p>Anna ist versiert im Umgang mit Excel und nutzt es ausgiebig für Datenanalysen und Berichterstellung. Sie verfügt aufgrund ihres akademischen Hintergrunds über Grundkenntnisse in Statistik, hat jedoch noch keine Programmiersprachen für die Datenanalyse verwendet und keine Erfahrung mit Systemen für Versionskontrolle.</p>
+<p><strong>Wahrnehmung der eigenen Bedürfnisse:</strong></p>
+<p>Anna hat das Bedürfnis ihre Datenanalysen reproduzierbar und öffentlich zu machen. Sie möchte durch offene Daten und offenen Code mehr Transparenz schaffen und effizienter werden. Sie glaubt, dass das Erlernen von R und Datenvisualisierungstechniken ihr dabei helfen wird, Daten effektiver für Nutzende zu präsentieren.</p>
+<p><strong>Besondere Überlegungen:</strong></p>
+<p>Anna hat einen vollen Terminkalender mit mehreren laufenden Projekten, daher benötigt sie einen flexiblen Lernplan und die Möglichkeit an einzelnen Modulen nicht teilzunehmen diese jedoch über eine Aufnahme nachzuholen. Sie lernt am liebsten anhand praktischer Beispiele aus ihrem Fachgebiet, wie zum Beispiel der Analyse von Gesundheitsdaten.</p>
+</section>
+<section id="carlos" class="level2">
+<h2 class="anchored" data-anchor-id="carlos">Carlos</h2>
+<p><strong>Allgemeiner Hintergrund:</strong></p>
+<p>Carlos ist ein 50-jähriger Wirtschaftswissenschaftler, der in einer leitenden Funktion der Finanzabteilung der Kantonsregierung arbeitet. Er hat einen Doktortitel in Wirtschaftswissenschaften und ist seit über 20 Jahren in der Politikanalyse und Wirtschaftsprognose tätig.</p>
+<p><strong>Relevantes Vorwissen:</strong></p>
+<p>Carlos ist sehr erfahren im Umgang mit Excel für komplexe ökonomische Modellierung und Datenmanipulation. Er hat durch Kurse, die er während seiner Promotion besucht hat, einige Berührungspunkte mit Programmiersprachen, aber er hat diese Fähigkeiten in seiner derzeitigen Position nicht aktiv genutzt.</p>
+<p><strong>Wahrnehmung der eigenen Bedürfnisse:</strong></p>
+<p>Carlos möchte seine Fähigkeiten um moderne datenwissenschaftliche Tools erweitern. Er ist besonders daran interessiert, R für parameterisierte Analysen und Git für die Versionskontrolle zu erlernen, um gemeinsam mit seinem Team an Projekten zu arbeiten.</p>
+<p><strong>Besondere Überlegungen:</strong></p>
+<p>Carlos legt Wert auf einen strukturierten Lernansatz mit klaren Zielen. Er kann selbstständig lernen, schätzt aber auch die Möglichkeit zu diskutieren und zusammenzuarbeiten. Datenschutz ist ihm wichtig, da sein Team mit sensiblen Finanzdaten arbeitet, welche nicht öffentlich zugänglich sein dürfen.</p>
+</section>
+<section id="fatima" class="level2">
+<h2 class="anchored" data-anchor-id="fatima">Fatima</h2>
+<p><strong>Allgemeiner Hintergrund:</strong></p>
+<p>Fatima ist eine 28-jährige Datenanalystin in der Bildungsdirektion. Sie hat einen Master-Abschluss in Mathematik und arbeitet seit fünf Jahren mit Bildungsdaten.</p>
+<p><strong>Relevantes Vorwissen</strong></p>
+<p>Sie verfügt über solide Grundkenntnisse in Mathematik und Statistik und arbeitet bereits mit base R, welches sie in einem Kurs während ihres Studiums kennengelernt hat.</p>
+<p><strong>Wahrnehmung der eigenen Bedürfnisse:</strong></p>
+<p>Fatima hat von den R Tidyverse Packages gehört und möchte diese nutzen, da ihr gesagt wurde es würde das Programmieren mit R erleichtern. Sie ist die einzige Person in ihrem Team mit Programmierkenntnissen und möchte ihre Teamkolleg:innen motivieren R zu lernen.</p>
+<p><strong>Besondere Überlegungen:</strong></p>
+<p>Fatima ist wissbegierig und bevorzugt interaktive, praktische Lernerfahrungen. Sie profitiert von visuellen Hilfsmitteln und Beispielen aus der Praxis, die in direktem Zusammenhang mit ihrer Arbeit im Bildungsbereich stehen. Während den Kursmodulen möchte sie die Möglichkeit haben, Fragen zu stellen und sich mit anderen Lernenden auszutauschen.</p>
+</section>
+<section id="thomas" class="level2">
+<h2 class="anchored" data-anchor-id="thomas">Thomas</h2>
+<p><strong>Allgemeiner Hintergrund:</strong></p>
+<p>Thomas ist ein 42-jähriger IT-Spezialist aus Deutschland. Er hat einen Master-Abschluss in Informatik und ist seit einem Jahr bei der im Amt für Informatik tätig, wo er sich auf IT-Systeme und Datenmanagement konzentriert.</p>
+<p><strong>Relevante Vorkenntnisse:</strong></p>
+<p>Thomas hat umfangreiche Programmierkenntnisse in Sprachen wie C++, Python und SQL. Er ist mit Versionskontrollsystemen vertraut und verwendet Git in seinen Projekten. Er hat wenig Erfahrung mit R und Datenvisualisierung.</p>
+<p><strong>Einschätzung der eigenen Bedürfnisse:</strong></p>
+<p>Thomas ist daran interessiert, seine datenwissenschaftlichen Fähigkeiten mit R zu erweitern um für die steigenden Bedürfnisse an R Support in der Kantonsverwaltung gerüstet zu sein. Er möchte aktiv an Open-Source-Projekten teilnehmen und die R Community unterstützen.</p>
+<p><strong>Besondere Überlegungen:</strong></p>
+<p>Thomas fühlt sich mit technischen Inhalten wohl und hat Spaß an der Lösung von Problemen. Er bevorzugt es in online Kursen für sich alleine zu arbeiten und seine Kamera und Mikrofon auszuschalten. Thomas fällt es schwer Dialekt zu verstehen und zu sprechen, daher bevorzugt er Kurse in Hochdeutsch oder Englisch.</p>
+</section>
+</section>
+<section id="lernziele" class="level1">
+<h1>Lernziele</h1>
+<p>Die folgenden Übergeordneten Lernziele sind für diesen Kurs definiert:</p>
+<ol type="1">
+<li><p>Teilnehmer:innen werden in der Lage sein, eine Reihe gängiger datenwissenschaftlicher Werkzeuge (R, RStudio IDE, Git, GitHub, R tidyverse packages, Quarto) zu verwenden, um die Ergebnisse von Datenanalyseprojekten zu veranschaulichen und öffentlich zu kommunizieren.</p></li>
+<li><p>Teilnehmer:innen können das Quarto-Dateiformat und den visuellen Bearbeitungsmodus der RStudio IDE zu verwenden, um technisch-wissenschaftliche Dokumente mit Zitaten, Fußnoten, Querverweisen, Abbildungen und Tabellen zu erstellen.</p></li>
+<li><p>Teilnehmer:innen können Git Versionskontrolle verwerden um: (1) Änderungen an Dateien zu GitHub zu übertragen und von GitHub zu übernehmen, (2) Branches zu nutzen und Pull Requests auf GitHub zu öffnen, (3) mittels des GitHub Issue Tracker innerhalb eines Projekts zu kommunizieren und an Aufgaben zusammenzuarbeiten.</p></li>
+</ol>
+</section>
+<section id="abschliessende-beurteilung" class="level1">
+<h1>Abschliessende Beurteilung</h1>
+<p>Am Ende des Kurses können die Teilnehmer:innen ein Problem mittels eines Abschlussprojektes lösen, welches über GitHub mit der Öffentlichkeit geteilt wird. Das Output dieses Projektes ist ein zweiseitiger Bericht, welcher mit Quarto erstellt wird und Text (in Markdown Syntax) und Code (in R Syntax) enthält. Der Bericht ist basierend auf offenen Daten mit Variablen für eine Zeitreihe (z.B. Jahr), eine Kategorie (z.B. Gemeinde) und einer Metrik (z.B. Einwohnerzahl). Der Bericht enthält eine Visualisierung der Daten erstellt mittels R package ggplot2 und einer zusammenfassende Tabelle erstellt mit R package gt basierend auf einer deskriptiven Analyse (z.B. Mittelwert, Standardabweichung, Median, etc.). Der Bericht ist parametrisiert für die Zeitreihe (z.B. Jahr) und einer Kategorie (z.B. Gemeinde) und kann mittels einer selbst erstellten Funktion und eines for loop als HTML und PDF Output erstellt werden.</p>
+</section>
+<section id="zeitaufwand" class="level1">
+<h1>Zeitaufwand</h1>
+<p>Der Kurs besteht aus 10 Modulen von 2.5 Stunden pro Modul. Zusätzlich werden zwei Wochen für die Vorbereitung auf den Kurs und zwei Wochen für die Fertigstellung eines Abschlussprojektes angesetzt womit sich der gesamte Kurs über einen Zeitraum von 14 Wochen streckt.</p>
+<p>Pro Modul wird von den Teilnehmer:innen ein zusätzlicher Zeitaufwand von 1.5 Stunden erwartet. Für die Fertigstellung des Abschlussprojektes in den zwei Wochen nach dem Kurs werden 4 Stunden erwartet. Dies führt zu folgendem Zeitaufwand:</p>
+<ul>
+<li>Vorbereitung: 2 Wochen à 1 Stunde = 2 Stunden</li>
+<li>Teilnahme Kursmodule: 10 Module à 2.5 Stunden = 25 Stunden</li>
+<li>Übungen: 10 Module à 1.5 Stunden = 15 Stunden</li>
+<li>Abschlussprojekt: 2 Wochen à 4 Stunden = 8 Stunden</li>
+</ul>
+<p>Insgesamt wird von den Teilnehmer:innen ein Zeitaufwand von 50 Stunden erwartet.</p>
+
+
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list" style="display: none">
+<div id="ref-wilson2019teaching" class="csl-entry" role="listitem">
+Wilson, Greg. 2019. <em>Teaching Tech Together: <span>How</span> to Make Lessons That Work and Build a Teaching Community Around Them</em>. Chapman &amp; Hall/CRC Press.
+</div>
+</div>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./module.html" class="pagination-link" aria-label="<span class='chapter-number'>1</span>&nbsp; <span class='chapter-title'>Module (noch nicht finalisiert)</span>">
+        <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Module (noch nicht finalisiert)</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

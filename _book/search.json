@@ -1,0 +1,72 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "rstatsZH",
+    "section": "",
+    "text": "Willkommen\nWillkommen zu rstatsZH - Data Science mit R. Dieser Kurs richtet sich an Mitarbeiter:innen der Verwaltung des Kantons Zürich. Die Kosten für den Kurs betragen 1950.00 CHF pro Person für ein 14-wöchiges Programm mit einem Gesamtaufwand von etwa 50 Stunden. Das gesamte Programm wird online mittels Zoom Videokonfernzen durchgeführt.\nSeit 2021 wird der Kurs jeweils im März und September durch das Statistische Amt Kanton Zürich angeboten. Im Jahr 2024 wurde der Kurs nach 8 Durchführungen überarbeitet und auf den neuesten Stand gebracht. Der Kurs wird von Lars Schöbitz, Lars Schöbitz GmbH, entwickelt und durchgeführt.",
+    "crumbs": [
+      "Willkommen"
+    ]
+  },
+  {
+    "objectID": "index.html#anna",
+    "href": "index.html#anna",
+    "title": "rstatsZH",
+    "section": "Anna",
+    "text": "Anna\nAllgemeiner Hintergrund:\nAnna ist eine 36-jährige Projektmanagerin im Gesundheitsamt der Kantonsregierung. Sie hat einen Master-Abschluss in Public Health und arbeitet seit über einem Jahrzehnt im öffentlichen Sektor. Zu ihren Aufgaben gehört die Koordination verschiedener Gesundheitsinitiativen und die Evaluierung von Programmergebnissen.\nRelevantes Vorwissen:\nAnna ist versiert im Umgang mit Excel und nutzt es ausgiebig für Datenanalysen und Berichterstellung. Sie verfügt aufgrund ihres akademischen Hintergrunds über Grundkenntnisse in Statistik, hat jedoch noch keine Programmiersprachen für die Datenanalyse verwendet und keine Erfahrung mit Systemen für Versionskontrolle.\nWahrnehmung der eigenen Bedürfnisse:\nAnna hat das Bedürfnis ihre Datenanalysen reproduzierbar und öffentlich zu machen. Sie möchte durch offene Daten und offenen Code mehr Transparenz schaffen und effizienter werden. Sie glaubt, dass das Erlernen von R und Datenvisualisierungstechniken ihr dabei helfen wird, Daten effektiver für Nutzende zu präsentieren.\nBesondere Überlegungen:\nAnna hat einen vollen Terminkalender mit mehreren laufenden Projekten, daher benötigt sie einen flexiblen Lernplan und die Möglichkeit an einzelnen Modulen nicht teilzunehmen diese jedoch über eine Aufnahme nachzuholen. Sie lernt am liebsten anhand praktischer Beispiele aus ihrem Fachgebiet, wie zum Beispiel der Analyse von Gesundheitsdaten.",
+    "crumbs": [
+      "Willkommen"
+    ]
+  },
+  {
+    "objectID": "index.html#carlos",
+    "href": "index.html#carlos",
+    "title": "rstatsZH",
+    "section": "Carlos",
+    "text": "Carlos\nAllgemeiner Hintergrund:\nCarlos ist ein 50-jähriger Wirtschaftswissenschaftler, der in einer leitenden Funktion der Finanzabteilung der Kantonsregierung arbeitet. Er hat einen Doktortitel in Wirtschaftswissenschaften und ist seit über 20 Jahren in der Politikanalyse und Wirtschaftsprognose tätig.\nRelevantes Vorwissen:\nCarlos ist sehr erfahren im Umgang mit Excel für komplexe ökonomische Modellierung und Datenmanipulation. Er hat durch Kurse, die er während seiner Promotion besucht hat, einige Berührungspunkte mit Programmiersprachen, aber er hat diese Fähigkeiten in seiner derzeitigen Position nicht aktiv genutzt.\nWahrnehmung der eigenen Bedürfnisse:\nCarlos möchte seine Fähigkeiten um moderne datenwissenschaftliche Tools erweitern. Er ist besonders daran interessiert, R für parameterisierte Analysen und Git für die Versionskontrolle zu erlernen, um gemeinsam mit seinem Team an Projekten zu arbeiten.\nBesondere Überlegungen:\nCarlos legt Wert auf einen strukturierten Lernansatz mit klaren Zielen. Er kann selbstständig lernen, schätzt aber auch die Möglichkeit zu diskutieren und zusammenzuarbeiten. Datenschutz ist ihm wichtig, da sein Team mit sensiblen Finanzdaten arbeitet, welche nicht öffentlich zugänglich sein dürfen.",
+    "crumbs": [
+      "Willkommen"
+    ]
+  },
+  {
+    "objectID": "index.html#fatima",
+    "href": "index.html#fatima",
+    "title": "rstatsZH",
+    "section": "Fatima",
+    "text": "Fatima\nAllgemeiner Hintergrund:\nFatima ist eine 28-jährige Datenanalystin in der Bildungsdirektion. Sie hat einen Master-Abschluss in Mathematik und arbeitet seit fünf Jahren mit Bildungsdaten.\nRelevantes Vorwissen\nSie verfügt über solide Grundkenntnisse in Mathematik und Statistik und arbeitet bereits mit base R, welches sie in einem Kurs während ihres Studiums kennengelernt hat.\nWahrnehmung der eigenen Bedürfnisse:\nFatima hat von den R Tidyverse Packages gehört und möchte diese nutzen, da ihr gesagt wurde es würde das Programmieren mit R erleichtern. Sie ist die einzige Person in ihrem Team mit Programmierkenntnissen und möchte ihre Teamkolleg:innen motivieren R zu lernen.\nBesondere Überlegungen:\nFatima ist wissbegierig und bevorzugt interaktive, praktische Lernerfahrungen. Sie profitiert von visuellen Hilfsmitteln und Beispielen aus der Praxis, die in direktem Zusammenhang mit ihrer Arbeit im Bildungsbereich stehen. Während den Kursmodulen möchte sie die Möglichkeit haben, Fragen zu stellen und sich mit anderen Lernenden auszutauschen.",
+    "crumbs": [
+      "Willkommen"
+    ]
+  },
+  {
+    "objectID": "index.html#thomas",
+    "href": "index.html#thomas",
+    "title": "rstatsZH",
+    "section": "Thomas",
+    "text": "Thomas\nAllgemeiner Hintergrund:\nThomas ist ein 42-jähriger IT-Spezialist aus Deutschland. Er hat einen Master-Abschluss in Informatik und ist seit einem Jahr bei der im Amt für Informatik tätig, wo er sich auf IT-Systeme und Datenmanagement konzentriert.\nRelevante Vorkenntnisse:\nThomas hat umfangreiche Programmierkenntnisse in Sprachen wie C++, Python und SQL. Er ist mit Versionskontrollsystemen vertraut und verwendet Git in seinen Projekten. Er hat wenig Erfahrung mit R und Datenvisualisierung.\nEinschätzung der eigenen Bedürfnisse:\nThomas ist daran interessiert, seine datenwissenschaftlichen Fähigkeiten mit R zu erweitern um für die steigenden Bedürfnisse an R Support in der Kantonsverwaltung gerüstet zu sein. Er möchte aktiv an Open-Source-Projekten teilnehmen und die R Community unterstützen.\nBesondere Überlegungen:\nThomas fühlt sich mit technischen Inhalten wohl und hat Spaß an der Lösung von Problemen. Er bevorzugt es in online Kursen für sich alleine zu arbeiten und seine Kamera und Mikrofon auszuschalten. Thomas fällt es schwer Dialekt zu verstehen und zu sprechen, daher bevorzugt er Kurse in Hochdeutsch oder Englisch.",
+    "crumbs": [
+      "Willkommen"
+    ]
+  },
+  {
+    "objectID": "module.html",
+    "href": "module.html",
+    "title": "1  Module (noch nicht finalisiert)",
+    "section": "",
+    "text": "Die folgenden 10 Module mit einer Dauer von 2.5 Stunden pro Modul werden über einen Zeitraum von 10 Wochen gelehrt:\n\n\n\n\n\n\n\n\n\nmodul\ntitel\n\n\n\n\nModul 01\nWillkommen zum Kurs & Werkzeugkiste\n\n\nModul 02\nExplorative Datenanalyse durch Visualisierung & Digitaler Arbeitsplatz (DAP)\n\n\nModul 03\nDaten Transformation mit dplyr & Kollaboratives Arbeiten mit GitHub I\n\n\nModul 04\nDaten Import & Daten Management\n\n\nModul 05\nBedingte Anweisungen & Datumswerte\n\n\nModul 06\nDaten Typen & Vektoren & For Loops\n\n\nModul 07\nDatenformen lang und breit & Daten zusammenfügen\n\n\nModul 08\nMit Text Daten arbeiten & Kollaboratives Arbeiten mit GitHub II\n\n\nModul 09\nErstellung und Veröffentlichung analytischer Artikel mit Quarto und GitHub Pages\n\n\nModul 10\nFunktionen schreiben & Parameterisierung von Berichten",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Module (noch nicht finalisiert)</span>"
+    ]
+  },
+  {
+    "objectID": "references.html",
+    "href": "references.html",
+    "title": "References",
+    "section": "",
+    "text": "Wilson, Greg. 2019. Teaching Tech Together: How to Make\nLessons That Work and Build a Teaching Community Around Them.\nChapman & Hall/CRC Press.",
+    "crumbs": [
+      "References"
+    ]
+  }
+]

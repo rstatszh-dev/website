@@ -1,19 +1,32 @@
 project:
-  type: website
+  type: book
 
-website:
-  title: "website"
-  navbar:
-    left:
-      - href: index.qmd
-        text: Home
-      - about.qmd
+book:
+  title: "rstatsZH"
+  author: "Lars Schöbitz"
+  date: today
+  chapters:
+    - index.qmd
+    - module.qmd
+    - references.qmd
+
+bibliography: rstatszh.bib
 
 format:
   html:
     theme: cosmo
-    css: styles.css
-    toc: true
-
-
-
+  pdf:
+    documentclass: scrreprt
+    include-in-header: 
+      text: |
+        \usepackage{makeidx}
+        \makeindex
+    include-after-body: 
+      text: |
+        \printindex
+        
+execute:
+    freeze: auto
+    echo: false
+    message: false
+    warning: false

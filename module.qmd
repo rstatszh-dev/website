@@ -1,0 +1,16 @@
+
+```{r}
+library(googlesheets4)
+```
+
+# Module (noch nicht finalisiert)
+
+Die folgenden 10 Module mit einer Dauer von 2.5 Stunden pro Modul werden über einen Zeitraum von 10 Wochen gelehrt:
+
+```{r}
+read_sheet("https://docs.google.com/spreadsheets/d/1zNG1qrFBDH8l76G-DQNaHDejbS3PR75_zmK0_7LiARY/edit?gid=0#gid=0") |> 
+    dplyr::filter(!is.na(modul)) |> 
+    dplyr::select(modul, titel) |> 
+    knitr::kable()
+```
+

@@ -1,0 +1,8 @@
+
+
+
+Zusätzlich notwendig:
+
+- .gitignore: um die erstellen Berichte nicht zu versionieren und sensitive Daten nicht auf GitHub zu pushen
+- execute YAML option
+- stringr::str_detect() in Kombination mit filter: Um in einer Text Variable (character) nach einem bestimmten Muster zu suchen (e.g. "bis") und die Zeilen zu filtern

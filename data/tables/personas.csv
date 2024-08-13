@@ -1,0 +1,5 @@
+name,description,domain_knowledge,statistics_knowledge,programming_knowledge
+Anna Müller,"Project manager in health, skilled in Excel, wants to improve data analysis.",Competent,Novice,Novice
+Markus Steiner,"Economist with a PhD, experienced in economic modeling, wants to learn R and Git.",Expert,Competent,Novice
+Sophie Keller,"Data analyst in education, strong in mathematics, seeks to learn R and Quarto.",Competent,Competent,Novice
+Thomas Weber,"IT specialist in infrastructure, experienced in IT systems, interested in R and GitHub.",Expert,Novice,Competent
