@@ -24,7 +24,7 @@ format:
     include-after-body: 
       text: |
         \printindex
-        
+
 execute:
     freeze: auto
     echo: false
