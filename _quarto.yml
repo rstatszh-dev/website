@@ -8,6 +8,7 @@ book:
   chapters:
     - index.qmd
     - module.qmd
+    - kurse.qmd
     - references.qmd
 
 bibliography: rstatszh.bib

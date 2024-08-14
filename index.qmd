@@ -18,6 +18,10 @@ nach 8 Durchführungen überarbeitet und auf den neuesten Stand gebracht.
 Der Kurs wird von Lars Schöbitz, Lars Schöbitz GmbH, entwickelt und
 durchgeführt.
 
+Eine unverbindliche Anmeldung ist über die Webseite des Statistischen
+Amts Kanton Zürich möglich:
+<https://www.zh.ch/de/politik-staat/statistik-daten/datenkompetenz/datenkompetenz-verwaltung.html>
+
 # Zielgruppe
 
 Die folgenden Learner Personas [@wilson2019teaching] beschreiben für

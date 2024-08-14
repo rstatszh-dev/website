@@ -1,0 +1,29 @@
+
+```{r}
+library(googlesheets4)
+```
+
+```{r}
+#| echo: false
+#| include: false
+Sys.setlocale("LC_TIME", "de_DE.UTF-8")
+```
+
+
+# Kurse
+
+Der Kurs besteht aus 10 Modulen von 2.5 Stunden pro Modul. Zusätzlich
+werden zwei Wochen für die Vorbereitung auf den Kurs und zwei Wochen für
+die Fertigstellung eines Abschlussprojektes angesetzt womit sich der
+gesamte Kurs über einen Zeitraum von 14 Wochen streckt. 
+
+Pro Jahr werden zwei Kurse angeboten. Die folgende Tabelle zeigt den Start und das Ende der 10 Kursmodule.
+
+```{r}
+
+read_sheet("https://docs.google.com/spreadsheets/d/1WhGB4Pqpr4ywGbOKaC2UoRsyaf5jbI7L8jY75Lic9FE/edit?gid=0#gid=0") |> 
+    dplyr::mutate(Start = format(Start, format = "%d %B %Y")) |> 
+    dplyr::mutate(Ende = format(Ende, format = "%d %B %Y")) |> 
+    knitr::kable()
+```
+

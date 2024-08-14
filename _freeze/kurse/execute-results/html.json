@@ -1,0 +1,15 @@
+{
+  "hash": "5b73a628903c08d231f544e4fd6d133e",
+  "result": {
+    "engine": "knitr",
+    "markdown": "::: {.cell}\n\n:::\n\n\n\n\n\n# Kurse\n\nDer Kurs besteht aus 10 Modulen von 2.5 Stunden pro Modul. Zusätzlich\nwerden zwei Wochen für die Vorbereitung auf den Kurs und zwei Wochen für\ndie Fertigstellung eines Abschlussprojektes angesetzt womit sich der\ngesamte Kurs über einen Zeitraum von 14 Wochen streckt. \n\nPro Jahr werden zwei Kurse angeboten. Die folgende Tabelle zeigt den Start und das Ende der 10 Kursmodule.\n\n\n::: {.cell}\n::: {.cell-output-display}\n\n\n|Kurs          |Start             |Ende             |Bemerkung                                      |\n|:-------------|:-----------------|:----------------|:----------------------------------------------|\n|rstatsZH-K009 |24 September 2024 |26 November 2024 |von 13:00 bis 15:30 Uhr                        |\n|rstatsZH-K010 |25 Februar 2025   |29 April 2024    |von 09:00 bis 11:30 Uhr (Uhrzeit provisorisch) |\n|rstatsZH-K011 |23 September 2025 |25 November 2025 |von 09:00 bis 11:30 Uhr (Uhrzeit provisorisch) |\n\n\n:::\n:::\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

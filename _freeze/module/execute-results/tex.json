@@ -1,0 +1,21 @@
+{
+  "hash": "4f4f799a18206ecbac6c3bd52a8ef4d3",
+  "result": {
+    "engine": "knitr",
+    "markdown": "::: {.cell}\n\n:::\n\n\n\n# Module (noch nicht finalisiert)\n\nDie folgenden 10 Module mit einer Dauer von 2.5 Stunden pro Modul werden über einen Zeitraum von 10 Wochen gelehrt:\n\n\n\n::: {.cell}\n::: {.cell-output-display}\n\n\n|modul    |titel                                                                            |\n|:--------|:--------------------------------------------------------------------------------|\n|Modul 01 |Willkommen zum Kurs & Werkzeugkiste                                              |\n|Modul 02 |Explorative Datenanalyse durch Visualisierung & Digitaler Arbeitsplatz (DAP)     |\n|Modul 03 |Daten Transformation mit dplyr & Kollaboratives Arbeiten mit GitHub I            |\n|Modul 04 |Daten Import & Daten Management                                                  |\n|Modul 05 |Bedingte Anweisungen & Datumswerte                                               |\n|Modul 06 |Daten Typen & Vektoren & For Loops                                               |\n|Modul 07 |Datenformen lang und breit & Daten zusammenfügen                                 |\n|Modul 08 |Mit Text Daten arbeiten & Kollaboratives Arbeiten mit GitHub II                  |\n|Modul 09 |Erstellung und Veröffentlichung analytischer Artikel mit Quarto und GitHub Pages |\n|Modul 10 |Funktionen schreiben & Parameterisierung von Berichten                           |\n\n\n:::\n:::\n",
+    "supporting": [
+      "module_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {
+      "knitr": [
+        "{\"type\":\"list\",\"attributes\":{},\"value\":[]}"
+      ]
+    },
+    "preserve": null,
+    "postProcess": false
+  }
+}

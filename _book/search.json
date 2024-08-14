@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "rstatsZH",
     "section": "",
-    "text": "Willkommen\nWillkommen zu rstatsZH - Data Science mit R. Dieser Kurs richtet sich an Mitarbeiter:innen der Verwaltung des Kantons Zürich. Die Kosten für den Kurs betragen 1950.00 CHF pro Person für ein 14-wöchiges Programm mit einem Gesamtaufwand von etwa 50 Stunden. Das gesamte Programm wird online mittels Zoom Videokonfernzen durchgeführt.\nSeit 2021 wird der Kurs jeweils im März und September durch das Statistische Amt Kanton Zürich angeboten. Im Jahr 2024 wurde der Kurs nach 8 Durchführungen überarbeitet und auf den neuesten Stand gebracht. Der Kurs wird von Lars Schöbitz, Lars Schöbitz GmbH, entwickelt und durchgeführt.",
+    "text": "Willkommen\nWillkommen zu rstatsZH - Data Science mit R. Dieser Kurs richtet sich an Mitarbeiter:innen der Verwaltung des Kantons Zürich. Die Kosten für den Kurs betragen 1950.00 CHF pro Person für ein 14-wöchiges Programm mit einem Gesamtaufwand von etwa 50 Stunden. Das gesamte Programm wird online mittels Zoom Videokonfernzen durchgeführt.\nSeit 2021 wird der Kurs jeweils im März und September durch das Statistische Amt Kanton Zürich angeboten. Im Jahr 2024 wurde der Kurs nach 8 Durchführungen überarbeitet und auf den neuesten Stand gebracht. Der Kurs wird von Lars Schöbitz, Lars Schöbitz GmbH, entwickelt und durchgeführt.\nEine unverbindliche Anmeldung ist über die Webseite des Statistischen Amts Kanton Zürich möglich: https://www.zh.ch/de/politik-staat/statistik-daten/datenkompetenz/datenkompetenz-verwaltung.html",
     "crumbs": [
       "Willkommen"
     ]
@@ -67,6 +67,16 @@
     "text": "Wilson, Greg. 2019. Teaching Tech Together: How to Make\nLessons That Work and Build a Teaching Community Around Them.\nChapman & Hall/CRC Press.",
     "crumbs": [
       "References"
+    ]
+  },
+  {
+    "objectID": "kurse.html",
+    "href": "kurse.html",
+    "title": "2  Kurse",
+    "section": "",
+    "text": "Der Kurs besteht aus 10 Modulen von 2.5 Stunden pro Modul. Zusätzlich werden zwei Wochen für die Vorbereitung auf den Kurs und zwei Wochen für die Fertigstellung eines Abschlussprojektes angesetzt womit sich der gesamte Kurs über einen Zeitraum von 14 Wochen streckt.\nPro Jahr werden zwei Kurse angeboten. Die folgende Tabelle zeigt den Start und das Ende der 10 Kursmodule.\n\n\n\n\n\n\n\n\n\n\n\nKurs\nStart\nEnde\nBemerkung\n\n\n\n\nrstatsZH-K009\n24 September 2024\n26 November 2024\nvon 13:00 bis 15:30 Uhr\n\n\nrstatsZH-K010\n25 Februar 2025\n29 April 2024\nvon 09:00 bis 11:30 Uhr (Uhrzeit provisorisch)\n\n\nrstatsZH-K011\n23 September 2025\n25 November 2025\nvon 09:00 bis 11:30 Uhr (Uhrzeit provisorisch)",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Kurse</span>"
     ]
   }
 ]
