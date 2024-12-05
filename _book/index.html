@@ -2,12 +2,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.4.549">
+<meta name="generator" content="quarto-1.5.57">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Lars Schöbitz">
-<meta name="dcterms.date" content="2024-08-14">
+<meta name="dcterms.date" content="2024-12-05">
 
 <title>rstatsZH</title>
 <style>
@@ -99,13 +99,13 @@ div.csl-indent {
   <header id="quarto-header" class="headroom fixed-top">
   <nav class="quarto-secondary-nav">
     <div class="container-fluid d-flex">
-      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
         <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./index.html">Willkommen</a></li></ol></nav>
-        <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
-      <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
         <i class="bi bi-search"></i>
       </button>
     </div>
@@ -136,7 +136,7 @@ div.csl-indent {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./module.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Module (noch nicht finalisiert)</span></span></a>
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Module</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -148,7 +148,7 @@ div.csl-indent {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./references.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">References</span></a>
+ <span class="menu-text">Referenzen</span></a>
   </div>
 </li>
     </ul>
@@ -171,7 +171,7 @@ div.csl-indent {
   </ul></li>
   <li><a href="#lernziele" id="toc-lernziele" class="nav-link" data-scroll-target="#lernziele">Lernziele</a></li>
   <li><a href="#abschliessende-beurteilung" id="toc-abschliessende-beurteilung" class="nav-link" data-scroll-target="#abschliessende-beurteilung">Abschliessende Beurteilung</a></li>
-  <li><a href="#zeitaufwand" id="toc-zeitaufwand" class="nav-link" data-scroll-target="#zeitaufwand">Zeitaufwand</a></li>
+  <li><a href="#sec-zeitwaufwand" id="toc-sec-zeitwaufwand" class="nav-link" data-scroll-target="#sec-zeitwaufwand">Zeitaufwand</a></li>
   </ul>
 </nav>
     </div>
@@ -181,6 +181,7 @@ div.csl-indent {
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
 <h1 class="title">rstatsZH</h1>
+<p class="subtitle lead">Data Science mit R</p>
 </div>
 
 
@@ -197,7 +198,7 @@ div.csl-indent {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">August 14, 2024</p>
+      <p class="date">December 5, 2024</p>
     </div>
   </div>
   
@@ -211,9 +212,10 @@ div.csl-indent {
 
 <section id="willkommen" class="level1 unnumbered">
 <h1 class="unnumbered">Willkommen</h1>
-<p>Willkommen zu rstatsZH - Data Science mit R. Dieser Kurs richtet sich an Mitarbeiter:innen der Verwaltung des Kantons Zürich. Die Kosten für den Kurs betragen 1950.00 CHF pro Person für ein 14-wöchiges Programm mit einem Gesamtaufwand von etwa 50 Stunden. Das gesamte Programm wird online mittels Zoom Videokonfernzen durchgeführt.</p>
-<p>Seit 2021 wird der Kurs jeweils im März und September durch das Statistische Amt Kanton Zürich angeboten. Im Jahr 2024 wurde der Kurs nach 8 Durchführungen überarbeitet und auf den neuesten Stand gebracht. Der Kurs wird von Lars Schöbitz, Lars Schöbitz GmbH, entwickelt und durchgeführt.</p>
-<p>Eine unverbindliche Anmeldung ist über die Webseite des Statistischen Amts Kanton Zürich möglich: <a href="https://www.zh.ch/de/politik-staat/statistik-daten/datenkompetenz/datenkompetenz-verwaltung.html" class="uri">https://www.zh.ch/de/politik-staat/statistik-daten/datenkompetenz/datenkompetenz-verwaltung.html</a></p>
+<p>Willkommen zu rstatsZH - Data Science mit R. Dieser Kurs richtet sich an Mitarbeiter:innen der Verwaltung des Kantons Zürich. Die Kosten für den Kurs betragen 1950.00 CHF pro Person für ein 14-wöchiges Programm mit einem Gesamtaufwand von etwa 65 Stunden (siehe Sektion <a href="#sec-zeitwaufwand" class="quarto-xref"><span>Zeitaufwand</span></a> für mehr Details). Das gesamte Programm wird online mittels MS Teams Videokonfernzen durchgeführt.</p>
+<p>Seit 2021 wird der Kurs jeweils im März und September durch das Statistische Amt Kanton Zürich angeboten. Im Jahr 2024 wurde der Kurs nach 8 Durchführungen überarbeitet und auf den neuesten Stand gebracht. Der Kurs wird von <a href="https://www.linkedin.com/in/larsschoebitz/">Lars Schöbitz</a>, Lars Schöbitz GmbH, entwickelt und durchgeführt.</p>
+<p>Ein Überblick der angebotenen Kurstermine ist auf der Seite <a href="./kurse.html">2 Kurse</a> zu finden und ein Überblick der Module auf Seite <a href="./module.html">1 Module</a>.</p>
+<p>Eine unverbindliche Anmeldung ist über die Webseite des Statistischen Amts Kanton Zürich möglich: <a href="https://www.zh.ch/de/politik-staat/statistik-daten/datenkompetenz/datenkompetenz-verwaltung/rstatszh-data-science-mit-r-anmelden.html" class="uri">https://www.zh.ch/de/politik-staat/statistik-daten/datenkompetenz/datenkompetenz-verwaltung/rstatszh-data-science-mit-r-anmelden.html</a></p>
 </section>
 <section id="zielgruppe" class="level1">
 <h1>Zielgruppe</h1>
@@ -276,17 +278,19 @@ div.csl-indent {
 <h1>Abschliessende Beurteilung</h1>
 <p>Am Ende des Kurses können die Teilnehmer:innen ein Problem mittels eines Abschlussprojektes lösen, welches über GitHub mit der Öffentlichkeit geteilt wird. Das Output dieses Projektes ist ein zweiseitiger Bericht, welcher mit Quarto erstellt wird und Text (in Markdown Syntax) und Code (in R Syntax) enthält. Der Bericht ist basierend auf offenen Daten mit Variablen für eine Zeitreihe (z.B. Jahr), eine Kategorie (z.B. Gemeinde) und einer Metrik (z.B. Einwohnerzahl). Der Bericht enthält eine Visualisierung der Daten erstellt mittels R package ggplot2 und einer zusammenfassende Tabelle erstellt mit R package gt basierend auf einer deskriptiven Analyse (z.B. Mittelwert, Standardabweichung, Median, etc.). Der Bericht ist parametrisiert für die Zeitreihe (z.B. Jahr) und einer Kategorie (z.B. Gemeinde) und kann mittels einer selbst erstellten Funktion und eines for loop als HTML und PDF Output erstellt werden.</p>
 </section>
-<section id="zeitaufwand" class="level1">
+<section id="sec-zeitwaufwand" class="level1">
 <h1>Zeitaufwand</h1>
 <p>Der Kurs besteht aus 10 Modulen von 2.5 Stunden pro Modul. Zusätzlich werden zwei Wochen für die Vorbereitung auf den Kurs und zwei Wochen für die Fertigstellung eines Abschlussprojektes angesetzt womit sich der gesamte Kurs über einen Zeitraum von 14 Wochen streckt.</p>
-<p>Pro Modul wird von den Teilnehmer:innen ein zusätzlicher Zeitaufwand von 1.5 Stunden erwartet. Für die Fertigstellung des Abschlussprojektes in den zwei Wochen nach dem Kurs werden 4 Stunden erwartet. Dies führt zu folgendem Zeitaufwand:</p>
+<p>Pro Modul wird von den Teilnehmer:innen ein zusätzlicher Zeitaufwand von etwa drei Stunden erwartet. Für die Fertigstellung des Abschlussprojektes in den zwei Wochen nach dem Kurs werden 4 Stunden erwartet.</p>
+<p>Dies führt zu folgendem Zeitaufwand:</p>
 <ul>
 <li>Vorbereitung: 2 Wochen à 1 Stunde = 2 Stunden</li>
 <li>Teilnahme Kursmodule: 10 Module à 2.5 Stunden = 25 Stunden</li>
-<li>Übungen: 10 Module à 1.5 Stunden = 15 Stunden</li>
+<li>Zusatzaufgaben: 10 Module à 2 Stunden = 20 Stunden</li>
+<li>Lesematerial: 10 Module à 1 Stunde = 10 Stunden</li>
 <li>Abschlussprojekt: 2 Wochen à 4 Stunden = 8 Stunden</li>
 </ul>
-<p>Insgesamt wird von den Teilnehmer:innen ein Zeitaufwand von 50 Stunden erwartet.</p>
+<p>Insgesamt wird von den Teilnehmer:innen ein Zeitaufwand von 65 Stunden erwartet.</p>
 
 
 <div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list" style="display: none">
@@ -332,18 +336,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
     return false;
   }
-  const clipboard = new window.ClipboardJS('.code-copy-button', {
-    text: function(trigger) {
-      const codeEl = trigger.previousElementSibling.cloneNode(true);
-      for (const childEl of codeEl.children) {
-        if (isCodeAnnotation(childEl)) {
-          childEl.remove();
-        }
-      }
-      return codeEl.innerText;
-    }
-  });
-  clipboard.on('success', function(e) {
+  const onCopySuccess = function(e) {
     // button target
     const button = e.trigger;
     // don't keep focus
@@ -375,7 +368,47 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }, 1000);
     // clear code selection
     e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
   });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    // For code content inside modals, clipBoardJS needs to be initialized with a container option
+    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
   function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
     const config = {
       allowHTML: true,
@@ -410,7 +443,11 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       try { href = new URL(href).hash; } catch {}
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
-      return note.innerHTML;
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
     });
   }
   const xrefs = window.document.querySelectorAll('a.quarto-xref');
@@ -688,8 +725,8 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   <div class="nav-page nav-page-previous">
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./module.html" class="pagination-link" aria-label="<span class='chapter-number'>1</span>&nbsp; <span class='chapter-title'>Module (noch nicht finalisiert)</span>">
-        <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Module (noch nicht finalisiert)</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./module.html" class="pagination-link" aria-label="Module">
+        <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Module</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

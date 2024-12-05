@@ -9,18 +9,19 @@ editor:
 Willkommen zu rstatsZH - Data Science mit R. Dieser Kurs richtet sich an
 Mitarbeiter:innen der Verwaltung des Kantons Zürich. Die Kosten für den
 Kurs betragen 1950.00 CHF pro Person für ein 14-wöchiges Programm mit
-einem Gesamtaufwand von etwa 50 Stunden. Das gesamte Programm wird
-online mittels Zoom Videokonfernzen durchgeführt.
+einem Gesamtaufwand von etwa 65 Stunden (siehe Sektion @sec-zeitwaufwand für mehr Details). Das gesamte Programm wird online mittels MS Teams Videokonfernzen durchgeführt.
 
 Seit 2021 wird der Kurs jeweils im März und September durch das
 Statistische Amt Kanton Zürich angeboten. Im Jahr 2024 wurde der Kurs
 nach 8 Durchführungen überarbeitet und auf den neuesten Stand gebracht.
-Der Kurs wird von Lars Schöbitz, Lars Schöbitz GmbH, entwickelt und
+Der Kurs wird von [Lars Schöbitz](https://www.linkedin.com/in/larsschoebitz/), Lars Schöbitz GmbH, entwickelt und
 durchgeführt.
+
+Ein Überblick der angebotenen Kurstermine ist auf der Seite [2 Kurse](kurse.qmd) zu finden und ein Überblick der Module auf Seite [1 Module](module.qmd).
 
 Eine unverbindliche Anmeldung ist über die Webseite des Statistischen
 Amts Kanton Zürich möglich:
-<https://www.zh.ch/de/politik-staat/statistik-daten/datenkompetenz/datenkompetenz-verwaltung.html>
+<https://www.zh.ch/de/politik-staat/statistik-daten/datenkompetenz/datenkompetenz-verwaltung/rstatszh-data-science-mit-r-anmelden.html>
 
 # Zielgruppe
 
@@ -195,22 +196,23 @@ etc.). Der Bericht ist parametrisiert für die Zeitreihe (z.B. Jahr) und
 einer Kategorie (z.B. Gemeinde) und kann mittels einer selbst erstellten
 Funktion und eines for loop als HTML und PDF Output erstellt werden.
 
-# Zeitaufwand
+# Zeitaufwand {#sec-zeitwaufwand}
 
 Der Kurs besteht aus 10 Modulen von 2.5 Stunden pro Modul. Zusätzlich
 werden zwei Wochen für die Vorbereitung auf den Kurs und zwei Wochen für
 die Fertigstellung eines Abschlussprojektes angesetzt womit sich der
 gesamte Kurs über einen Zeitraum von 14 Wochen streckt.
 
-Pro Modul wird von den Teilnehmer:innen ein zusätzlicher Zeitaufwand von
-1.5 Stunden erwartet. Für die Fertigstellung des Abschlussprojektes in
-den zwei Wochen nach dem Kurs werden 4 Stunden erwartet. Dies führt zu
-folgendem Zeitaufwand:
+Pro Modul wird von den Teilnehmer:innen ein zusätzlicher Zeitaufwand von etwa drei Stunden erwartet. Für die Fertigstellung des Abschlussprojektes in
+den zwei Wochen nach dem Kurs werden 4 Stunden erwartet. 
+
+Dies führt zu folgendem Zeitaufwand:
 
 -   Vorbereitung: 2 Wochen à 1 Stunde = 2 Stunden
 -   Teilnahme Kursmodule: 10 Module à 2.5 Stunden = 25 Stunden
--   Übungen: 10 Module à 1.5 Stunden = 15 Stunden
+-   Zusatzaufgaben: 10 Module à 2 Stunden = 20 Stunden
+-   Lesematerial: 10 Module à 1 Stunde = 10 Stunden
 -   Abschlussprojekt: 2 Wochen à 4 Stunden = 8 Stunden
 
-Insgesamt wird von den Teilnehmer:innen ein Zeitaufwand von 50 Stunden
+Insgesamt wird von den Teilnehmer:innen ein Zeitaufwand von 65 Stunden
 erwartet.

@@ -3,6 +3,7 @@ project:
 
 book:
   title: "rstatsZH"
+  subtitle: "Data Science mit R"
   author: "Lars Schöbitz"
   date: today
   chapters:

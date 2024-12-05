@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "rstatsZH",
     "section": "",
-    "text": "Willkommen\nWillkommen zu rstatsZH - Data Science mit R. Dieser Kurs richtet sich an Mitarbeiter:innen der Verwaltung des Kantons Zürich. Die Kosten für den Kurs betragen 1950.00 CHF pro Person für ein 14-wöchiges Programm mit einem Gesamtaufwand von etwa 50 Stunden. Das gesamte Programm wird online mittels Zoom Videokonfernzen durchgeführt.\nSeit 2021 wird der Kurs jeweils im März und September durch das Statistische Amt Kanton Zürich angeboten. Im Jahr 2024 wurde der Kurs nach 8 Durchführungen überarbeitet und auf den neuesten Stand gebracht. Der Kurs wird von Lars Schöbitz, Lars Schöbitz GmbH, entwickelt und durchgeführt.\nEine unverbindliche Anmeldung ist über die Webseite des Statistischen Amts Kanton Zürich möglich: https://www.zh.ch/de/politik-staat/statistik-daten/datenkompetenz/datenkompetenz-verwaltung.html",
+    "text": "Willkommen\nWillkommen zu rstatsZH - Data Science mit R. Dieser Kurs richtet sich an Mitarbeiter:innen der Verwaltung des Kantons Zürich. Die Kosten für den Kurs betragen 1950.00 CHF pro Person für ein 14-wöchiges Programm mit einem Gesamtaufwand von etwa 65 Stunden (siehe Sektion Zeitaufwand für mehr Details). Das gesamte Programm wird online mittels MS Teams Videokonfernzen durchgeführt.\nSeit 2021 wird der Kurs jeweils im März und September durch das Statistische Amt Kanton Zürich angeboten. Im Jahr 2024 wurde der Kurs nach 8 Durchführungen überarbeitet und auf den neuesten Stand gebracht. Der Kurs wird von Lars Schöbitz, Lars Schöbitz GmbH, entwickelt und durchgeführt.\nEin Überblick der angebotenen Kurstermine ist auf der Seite 2 Kurse zu finden und ein Überblick der Module auf Seite 1 Module.\nEine unverbindliche Anmeldung ist über die Webseite des Statistischen Amts Kanton Zürich möglich: https://www.zh.ch/de/politik-staat/statistik-daten/datenkompetenz/datenkompetenz-verwaltung/rstatszh-data-science-mit-r-anmelden.html",
     "crumbs": [
       "Willkommen"
     ]
@@ -52,21 +52,11 @@
   {
     "objectID": "module.html",
     "href": "module.html",
-    "title": "1  Module (noch nicht finalisiert)",
+    "title": "1  Module",
     "section": "",
-    "text": "Die folgenden 10 Module mit einer Dauer von 2.5 Stunden pro Modul werden über einen Zeitraum von 10 Wochen gelehrt:\n\n\n\n\n\n\n\n\n\nmodul\ntitel\n\n\n\n\nModul 01\nWillkommen zum Kurs & Werkzeugkiste\n\n\nModul 02\nExplorative Datenanalyse durch Visualisierung & Digitaler Arbeitsplatz (DAP)\n\n\nModul 03\nDaten Transformation mit dplyr & Kollaboratives Arbeiten mit GitHub I\n\n\nModul 04\nDaten Import & Daten Management\n\n\nModul 05\nBedingte Anweisungen & Datumswerte\n\n\nModul 06\nDaten Typen & Vektoren & For Loops\n\n\nModul 07\nDatenformen lang und breit & Daten zusammenfügen\n\n\nModul 08\nMit Text Daten arbeiten & Kollaboratives Arbeiten mit GitHub II\n\n\nModul 09\nErstellung und Veröffentlichung analytischer Artikel mit Quarto und GitHub Pages\n\n\nModul 10\nFunktionen schreiben & Parameterisierung von Berichten",
+    "text": "Die folgenden 10 Module mit einer Dauer von 2.5 Stunden pro Modul werden über einen Zeitraum von 10 Wochen gelehrt. Eine detaillierte Beschreibung der Lernziele für jedes Modul ist auf der jeweiligen Kurswebseite verfügbar (siehe Kapitel 2 Kurse).\n\n\n\n\n\n\n\n\n\nmodul\ntitel\n\n\n\n\nModul 01\nWillkommen zum Kurs & Werkzeugkiste & Kollaboratives Arbeiten mit GitHub I\n\n\nModul 02\nExplorative Datenanalyse durch Visualisierung & Digitaler Arbeitsplatz (DAP) & R-Community\n\n\nModul 03\nDaten Transformation mit dplyr\n\n\nModul 04\nDaten Import & Daten Management & Kollaboratives Arbeiten mit GitHub II\n\n\nModul 05\nBedingte Anweisungen & Datumswerte & OGD Ressourcen\n\n\nModul 06\nDaten Typen & Vektoren & Iteration I (for loops)\n\n\nModul 07\nDatenformen lang und breit & Daten zusammenfügen\n\n\nModul 08\nMit Text Daten arbeiten & KTZH Corporate Design mit statR\n\n\nModul 09\nErstellung von Berichten und Folien mit Quarto\n\n\nModul 10\nFunktionen schreiben & Parameterisierung von Berichten\n\n\nAbschlussprojekt\nArbeitszeit für Abschlussprojekt\n\n\nAbschlussprojekt\nAbgabe Abschlussprojekt\n\n\nAbschlussveranstaltung\nAbschlussveranstaltung",
     "crumbs": [
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Module (noch nicht finalisiert)</span>"
-    ]
-  },
-  {
-    "objectID": "references.html",
-    "href": "references.html",
-    "title": "References",
-    "section": "",
-    "text": "Wilson, Greg. 2019. Teaching Tech Together: How to Make\nLessons That Work and Build a Teaching Community Around Them.\nChapman & Hall/CRC Press.",
-    "crumbs": [
-      "References"
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Module</span>"
     ]
   },
   {
@@ -74,9 +64,19 @@
     "href": "kurse.html",
     "title": "2  Kurse",
     "section": "",
-    "text": "Der Kurs besteht aus 10 Modulen von 2.5 Stunden pro Modul. Zusätzlich werden zwei Wochen für die Vorbereitung auf den Kurs und zwei Wochen für die Fertigstellung eines Abschlussprojektes angesetzt womit sich der gesamte Kurs über einen Zeitraum von 14 Wochen streckt.\nPro Jahr werden zwei Kurse angeboten. Die folgende Tabelle zeigt den Start und das Ende der 10 Kursmodule.\n\n\n\n\n\n\n\n\n\n\n\nKurs\nStart\nEnde\nBemerkung\n\n\n\n\nrstatsZH-K009\n24 September 2024\n26 November 2024\nvon 13:00 bis 15:30 Uhr\n\n\nrstatsZH-K010\n25 Februar 2025\n29 April 2024\nvon 09:00 bis 11:30 Uhr (Uhrzeit provisorisch)\n\n\nrstatsZH-K011\n23 September 2025\n25 November 2025\nvon 09:00 bis 11:30 Uhr (Uhrzeit provisorisch)",
+    "text": "Der Kurs besteht aus 10 Modulen von 2.5 Stunden pro Modul. Zusätzlich werden zwei Wochen für die Vorbereitung auf den Kurs und zwei Wochen für die Fertigstellung eines Abschlussprojektes angesetzt womit sich der gesamte Kurs über einen Zeitraum von 14 Wochen streckt.\n\n\n\n\n\n\n\n\n\n\n\n\n\nStatus\nKurs\nStart\nEnde\nBemerkung\nKurswebseite\n\n\n\n\nabgeschlossen\nrstatsZH-K009\n24 September 2024\n26 November 2024\nvon 13:00 bis 15:30 Uhr\nhttps://rstatszh-k009.github.io/website/\n\n\nterminiert\nrstatsZH-K010\n25 Februar 2025\n29 April 2024\nvon 13:00 bis 15:30 Uhr\nhttps://rstatszh-k010.github.io/website/\n\n\nangekündigt\nrstatsZH-K011\n23 September 2025\n25 November 2025\nvon 13:00 bis 15:30 Uhr (provisorisch)",
     "crumbs": [
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>Kurse</span>"
+    ]
+  },
+  {
+    "objectID": "references.html",
+    "href": "references.html",
+    "title": "Referenzen",
+    "section": "",
+    "text": "Wilson, Greg. 2019. Teaching Tech Together: How to Make\nLessons That Work and Build a Teaching Community Around Them.\nChapman & Hall/CRC Press.",
+    "crumbs": [
+      "Referenzen"
     ]
   }
 ]
