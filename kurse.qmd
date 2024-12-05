@@ -1,9 +1,5 @@
 
 ```{r}
-library(googlesheets4)
-```
-
-```{r}
 #| echo: false
 #| include: false
 Sys.setlocale("LC_TIME", "de_DE.UTF-8")
@@ -26,7 +22,7 @@ options(knitr.kable.NA = '')
 ```{r}
 #| tbl-colwidths: [15, 30, 55]
 
-read_sheet("https://docs.google.com/spreadsheets/d/1WhGB4Pqpr4ywGbOKaC2UoRsyaf5jbI7L8jY75Lic9FE/edit?gid=0#gid=0") |> 
+readr::read_csv(file = here::here("data/tables/tbl-01-rstatszh-kurse.csv")) |> 
     dplyr::mutate(Start = format(Start, format = "%d %B %Y")) |> 
     dplyr::mutate(Ende = format(Ende, format = "%d %B %Y")) |> 
     knitr::kable()

@@ -1,15 +1,10 @@
 
-```{r}
-library(googlesheets4)
-```
-
 # Module 
 
 Die folgenden 10 Module mit einer Dauer von 2.5 Stunden pro Modul werden über einen Zeitraum von 10 Wochen gelehrt. Eine detaillierte Beschreibung der Lernziele für jedes Modul ist auf der jeweiligen Kurswebseite verfügbar (siehe Kapitel [2 Kurse](kurse.qmd)).
 
-
 ```{r}
-read_sheet("https://docs.google.com/spreadsheets/d/1zNG1qrFBDH8l76G-DQNaHDejbS3PR75_zmK0_7LiARY/edit?gid=0#gid=0") |> 
+readr::read_csv(file = here::here("data/tables/tbl-00-rstatszh-kursplan.csv")) |> 
     dplyr::filter(!is.na(modul)) |> 
     dplyr::select(modul, titel) |> 
     knitr::kable()
