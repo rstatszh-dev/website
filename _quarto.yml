@@ -19,6 +19,8 @@ format:
   html:
     theme:
       light: [litera, theme.scss]
+    link-external-icon: true
+    link-external-newwindow: true
     highlight-style: a11y-dark
     css: styles.css
     code-copy: true
