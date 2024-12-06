@@ -1,8 +1,14 @@
+---
+execute:
+    eval: false
+---
+
 
 ```{r}
 #| echo: false
 #| include: false
 Sys.setlocale("LC_TIME", "de_DE.UTF-8")
+options(knitr.kable.NA = '')
 ```
 
 # Kurse {#sec-kurse}
@@ -12,12 +18,7 @@ werden zwei Wochen für die Vorbereitung auf den Kurs und zwei Wochen für
 die Fertigstellung eines Abschlussprojektes angesetzt womit sich der
 gesamte Kurs über einen Zeitraum von 14 Wochen streckt. 
 
-```{r}
-#| echo: false
-#| include: false
-Sys.setlocale("LC_TIME", "de_DE.UTF-8")
-options(knitr.kable.NA = '')
-```
+
 
 ```{r}
 #| tbl-colwidths: [15, 30, 55]
