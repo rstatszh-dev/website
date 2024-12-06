@@ -1,5 +1,6 @@
 project:
   type: book
+  output-dir: _site
 
 book:
   title: "rstatsZH"
@@ -31,15 +32,6 @@ format:
     include-in-header: 
         - text: |
             <script defer data-domain="rstats.zuerich" src="https://plausible.io/js/script.js"></script>
-  pdf:
-    documentclass: scrreprt
-    include-in-header: 
-      text: |
-        \usepackage{makeidx}
-        \makeindex
-    include-after-body: 
-      text: |
-        \printindex
 
 execute:
     freeze: auto
