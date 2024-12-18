@@ -1,0 +1,15 @@
+{
+  "hash": "792c768f1ef6fd8331e5a1b3d12f0734",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\nexecute:\n    eval: true\n---\n\n\n\n\n\n\n# Abschlussprojekt {#sec-projekte}\n\nDas Abschlussprojekt ist ein fester Bestandteil des Kurses. Es umfasst einen Bericht zu einer Datenanalyse mit von den Teilnehmer:innen gewählten Daten. Das Projekt wird im Zeitraum des Kurses erstellt und begleitet. Für die gewählten Daten kommen bereits als OGD veröffentlichte Daten in Frage oder eigene Daten, welche als OGD veröffentlicht werden. Der Code für den Bericht ist von Beginn an über GitHub öffentlich publiziert und der Bericht selbst mittels GitHub Pages in einem für die Öffentlichkeit nützlichem Format geteilt. Somit werden im Abschlussprojekt nicht nur die im Kurs gelernten Fähigkeiten für R geübt, sondern auch \"open source\" gearbeitet mit Werkzeugen, die eine öffentliche Verwaltung unterstüten.\n\n## Projekte\n\nDie folgende Tabelle zeigt einen Überblick über die im Kurs entstandenen Projekte. Jedes Projekt hat eine eigenständige Webseite. Die Tabelle zeigt die folgenden Variablen:\n\n- vorname: Vorname Kursteilnehmer:in\n- nachname: Nachname Kursteilnehmer:in\n- gh_username: GitHub Benutzername mit verlinktem GitHub Profil\n- abteilung: \n- kurs: Titel des Kurses \n- daten: Titel des Datensatzes\n- daten_ogd: Angabe ob Daten bereits als OGD publiziert wurden\n- daten_url: Angabe der URL des publizierten Datensatzes\n- ...\n\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}
