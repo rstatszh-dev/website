@@ -18,8 +18,6 @@ werden zwei Wochen für die Vorbereitung auf den Kurs und zwei Wochen für
 die Fertigstellung eines Abschlussprojektes angesetzt womit sich der
 gesamte Kurs über einen Zeitraum von 14 Wochen streckt. 
 
-
-
 ```{r}
 #| tbl-colwidths: [15, 30, 55]
 
