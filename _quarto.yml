@@ -11,6 +11,7 @@ book:
     - index.qmd
     - module.qmd
     - kurse.qmd
+    - projekte.qmd
     - references.qmd
 
 bibliography: rstatszh.bib
