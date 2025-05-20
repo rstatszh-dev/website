@@ -21,15 +21,15 @@ Sys.setlocale("LC_TIME", "de_DE.UTF-8")
 options(knitr.kable.NA = '')
 ```
 
-# Abschlussprojekt {#sec-projekte}
+# Projekte {#sec-projekte}
 
 Das Abschlussprojekt ist ein fester Bestandteil des Kurses. Es umfasst einen Bericht zu einer Datenanalyse mit von den Teilnehmer:innen gewählten Daten. Das Projekt wird im Zeitraum des Kurses erstellt und begleitet. Für die gewählten Daten kommen bereits als OGD veröffentlichte Daten in Frage oder eigene Daten, welche, falls möglich, mitsamt des Berichtes veröffentlicht werden. 
 
 Der Code für den Bericht ist über GitHub öffentlich publiziert und der Bericht selbst mittels GitHub Pages in einem für die Öffentlichkeit nützlichem Format geteilt. Somit werden im Abschlussprojekt nicht nur die im Kurs gelernten Fähigkeiten für R geübt, sondern auch kollaborativ und "open source" gearbeitet.
 
-## Projekte
+## Übersicht
 
-Die folgende Tabelle zeigt einen Überblick über die im Kurs entstandenen Projekte. Jedes Projekt hat eine eigenständige Webseite. Die Tabelle zeigt die folgenden Variablen:
+Die folgende Tabelle zeigt eine Übersicht über die im Kurs entstandenen Projekte. Jedes Projekt hat eine eigenständige Webseite und ein GitHub Repository mit dem Code und den Daten. 
 
 ```{r}
 projekte <- read_csv("data/tables/tbl-02-rstatszh-projekte.csv") |> 
