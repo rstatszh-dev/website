@@ -9,8 +9,8 @@ book:
   date: today
   chapters:
     - index.qmd
-    - module.qmd
     - kurse.qmd
+    - module.qmd
     - projekte.qmd
     - references.qmd
 

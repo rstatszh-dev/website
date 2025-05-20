@@ -9,15 +9,21 @@ editor:
 Willkommen zu rstatsZH - Data Science mit R. Dieser Kurs richtet sich an
 Mitarbeiter:innen der Verwaltung des Kantons Zürich. Die Kosten für den
 Kurs betragen 1950.00 CHF pro Person für ein 14-wöchiges Programm mit
-einem Gesamtaufwand von etwa 65 Stunden (siehe Sektion @sec-zeitwaufwand für mehr Details). Das gesamte Programm wird online mittels MS Teams Videokonfernzen durchgeführt.
+einem Gesamtaufwand von etwa 65 Stunden (siehe Sektion @sec-zeitwaufwand
+für mehr Details). Das gesamte Programm wird online mittels MS Teams
+Videokonfernzen durchgeführt.
 
 Seit 2021 wird der Kurs jeweils im März und September durch das
 Statistische Amt Kanton Zürich angeboten. Im Jahr 2024 wurde der Kurs
 nach 8 Durchführungen überarbeitet und auf den neuesten Stand gebracht.
-Der Kurs wird von [Lars Schöbitz](https://www.linkedin.com/in/larsschoebitz/), Lars Schöbitz GmbH, entwickelt und
-durchgeführt.
+Der Kurs wird von [Lars
+Schöbitz](https://www.linkedin.com/in/larsschoebitz/), Lars Schöbitz
+GmbH, entwickelt und durchgeführt.
 
-Ein Überblick der angebotenen Kurstermine ist auf der Seite [2 Kurse](kurse.qmd) zu finden und ein Überblick der Module auf Seite [1 Module](module.qmd).
+Ein Überblick der angebotenen Kurstermine ist auf der Seite [1
+Kurse](kurse.qmd) zu finden, ein Überblick der Module auf Seite [2
+Module](module.qmd) und eine Gallerie der Abschlussprojekte aus
+abgeschlossenen Kursen auf Seite [3 Projekte](projekte.qmd).
 
 Eine unverbindliche Anmeldung ist über die Webseite des Statistischen
 Amts Kanton Zürich möglich:
@@ -203,8 +209,10 @@ werden zwei Wochen für die Vorbereitung auf den Kurs und zwei Wochen für
 die Fertigstellung eines Abschlussprojektes angesetzt womit sich der
 gesamte Kurs über einen Zeitraum von 14 Wochen streckt.
 
-Pro Modul wird von den Teilnehmer:innen ein zusätzlicher Zeitaufwand von etwa drei Stunden erwartet. Für die Fertigstellung des Abschlussprojektes in
-den zwei Wochen nach dem Kurs werden 4 Stunden erwartet. 
+Pro Modul wird von den Teilnehmer:innen ein zusätzlicher Zeitaufwand von
+etwa drei Stunden erwartet. Für die Fertigstellung des
+Abschlussprojektes in den zwei Wochen nach dem Kurs werden 4 Stunden
+erwartet.
 
 Dies führt zu folgendem Zeitaufwand:
 
