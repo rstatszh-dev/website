@@ -36,6 +36,11 @@ projekte <- read_csv("data/tables/tbl-02-rstatszh-projekte.csv") |>
     filter(!is.na(projekt_website_url)) |> 
     mutate(projekt_webseite = paste0("Webseite: ", "<a href='", projekt_website_url, "' target='_blank'>", projekt_titel, "</a>")) |> 
     mutate(projekt_code = paste0("Daten & Code: ", "<a href='", projekt_github_url, "' target='_blank'>", "GitHub", "</a>")) |> 
+    mutate(gh_username = paste0(
+        "<a href='https://github.com/", gh_username, "' target='_blank'>",
+        gh_username,
+        "</a>"
+    )) |>
     select(-projekt_website_url, -projekt_github_url, -projekt_titel, -fachstelle_amt) 
 ```
 
