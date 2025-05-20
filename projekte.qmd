@@ -1,7 +1,18 @@
 ---
 execute:
     eval: true
+    echo: false
+    warning: false
+editor_options: 
+  chunk_output_type: console
 ---
+
+
+```{r}
+library(tidyverse)
+library(DT)
+```
+
 
 ```{r}
 #| echo: false
@@ -12,19 +23,43 @@ options(knitr.kable.NA = '')
 
 # Abschlussprojekt {#sec-projekte}
 
-Das Abschlussprojekt ist ein fester Bestandteil des Kurses. Es umfasst einen Bericht zu einer Datenanalyse mit von den Teilnehmer:innen gewählten Daten. Das Projekt wird im Zeitraum des Kurses erstellt und begleitet. Für die gewählten Daten kommen bereits als OGD veröffentlichte Daten in Frage oder eigene Daten, welche als OGD veröffentlicht werden. Der Code für den Bericht ist von Beginn an über GitHub öffentlich publiziert und der Bericht selbst mittels GitHub Pages in einem für die Öffentlichkeit nützlichem Format geteilt. Somit werden im Abschlussprojekt nicht nur die im Kurs gelernten Fähigkeiten für R geübt, sondern auch "open source" gearbeitet mit Werkzeugen, die eine öffentliche Verwaltung unterstüten.
+Das Abschlussprojekt ist ein fester Bestandteil des Kurses. Es umfasst einen Bericht zu einer Datenanalyse mit von den Teilnehmer:innen gewählten Daten. Das Projekt wird im Zeitraum des Kurses erstellt und begleitet. Für die gewählten Daten kommen bereits als OGD veröffentlichte Daten in Frage oder eigene Daten, welche, falls möglich, mitsamt des Berichtes veröffentlicht werden. 
+
+Der Code für den Bericht ist über GitHub öffentlich publiziert und der Bericht selbst mittels GitHub Pages in einem für die Öffentlichkeit nützlichem Format geteilt. Somit werden im Abschlussprojekt nicht nur die im Kurs gelernten Fähigkeiten für R geübt, sondern auch kollaborativ und "open source" gearbeitet.
 
 ## Projekte
 
 Die folgende Tabelle zeigt einen Überblick über die im Kurs entstandenen Projekte. Jedes Projekt hat eine eigenständige Webseite. Die Tabelle zeigt die folgenden Variablen:
 
-- vorname: Vorname Kursteilnehmer:in
-- nachname: Nachname Kursteilnehmer:in
-- gh_username: GitHub Benutzername mit verlinktem GitHub Profil
-- abteilung: 
-- kurs: Titel des Kurses 
-- daten: Titel des Datensatzes
-- daten_ogd: Angabe ob Daten bereits als OGD publiziert wurden
-- daten_url: Angabe der URL des publizierten Datensatzes
-- ...
+```{r}
+projekte <- read_csv("data/tables/tbl-02-rstatszh-projekte.csv") |> 
+    filter(!is.na(projekt_website_url)) |> 
+    mutate(projekt_webseite = paste0("Webseite: ", "<a href='", projekt_website_url, "' target='_blank'>", projekt_titel, "</a>")) |> 
+    mutate(projekt_code = paste0("Daten & Code: ", "<a href='", projekt_github_url, "' target='_blank'>", "GitHub", "</a>")) |> 
+    mutate(gh_username = paste0(
+        "<a href='https://github.com/", gh_username, "' target='_blank'>",
+        gh_username,
+        "</a>"
+    )) |>
+    select(-projekt_website_url, -projekt_github_url, -projekt_titel, -fachstelle_amt) 
+```
+
+:::{.column-page}
+
+```{r}
+projekte |>  
+    rename(`GitHub Nutzername` = gh_username,
+           Kurs = kurs,
+           Direktion = direktion,
+           Abschlussbericht = projekt_webseite,
+           `Open Source` = projekt_code) |>
+    datatable(escape = FALSE,
+              rownames = FALSE, 
+              options = list(
+                  lengthChange = FALSE,  # Remove 'show entries'
+                  pageLength = nrow(projekte)  # Show all entries
+              )) 
+```
+
+:::
 
