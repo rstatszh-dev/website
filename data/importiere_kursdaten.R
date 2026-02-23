@@ -31,7 +31,7 @@ read_sheet(ss = kursplan) |>
 projekte <- "https://docs.google.com/spreadsheets/d/1jWY1q1H14Zhb-c4BXgRp3K9QqdfHCX6nrkEZjQ5TQX4/edit?gid=1700884386#gid=1700884386"
 
 read_sheet(ss = projekte) |> 
-    filter(kurs == "k010") |> 
+    filter(kurs %in% c("k010", "k011")) |> 
     select(gh_username = `Bitte gib deinen GitHub-Benutzernamen an`,
            kurs,
            direktion = `In welcher Direktion des Kanton Zürich bist du angestellt?`,
