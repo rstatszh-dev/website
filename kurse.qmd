@@ -25,5 +25,6 @@ readr::read_csv(file = here::here("data/tables/tbl-01-rstatszh-kurse.csv")) |>
     dplyr::mutate(Start = format(Start, format = "%d %B %Y")) |> 
     dplyr::mutate(Ende = format(Ende, format = "%d %B %Y")) |> 
     knitr::kable()
+
 ```
 
