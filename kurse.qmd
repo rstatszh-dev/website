@@ -11,20 +11,40 @@ Sys.setlocale("LC_TIME", "de_DE.UTF-8")
 options(knitr.kable.NA = '')
 ```
 
-# Kurse {#sec-kurse}
+# Kurse {#sec-kurse .unnumbered}
 
 Der Kurs besteht aus 10 Modulen von 2.5 Stunden pro Modul. Zusätzlich
 werden zwei Wochen für die Vorbereitung auf den Kurs und zwei Wochen für
 die Fertigstellung eines Abschlussprojektes angesetzt womit sich der
-gesamte Kurs über einen Zeitraum von 14 Wochen streckt. 
+gesamte Kurs über einen Zeitraum von 14 Wochen streckt.
+
+:::{.column-page}
 
 ```{r}
-#| tbl-colwidths: [15, 30, 55]
+#| tbl-colwidths: [14, 18, 16, 16, 36]
 
-readr::read_csv(file = here::here("data/tables/tbl-01-rstatszh-kurse.csv")) |> 
-    dplyr::mutate(Start = format(Start, format = "%d %B %Y")) |> 
-    dplyr::mutate(Ende = format(Ende, format = "%d %B %Y")) |> 
-    knitr::kable()
+readr::read_csv(file = here::here("data/tables/tbl-01-rstatszh-kurse.csv")) |>
+    dplyr::arrange(dplyr::desc(Start)) |>
+    dplyr::mutate(
+        Status = paste0(
+            "<span class='kurs-status kurs-status-",
+            stringi::stri_trans_general(Status, "Latin-ASCII"),
+            "'>", Status, "</span>"
+        ),
+        Start = format(Start, format = "%d %B %Y"),
+        Ende  = format(Ende,  format = "%d %B %Y"),
+        Kurswebseite = dplyr::if_else(
+            is.na(Kurswebseite) | Kurswebseite == "NA",
+            tolower(Kurs),
+            paste0(
+                "[", tolower(Kurs), " ](",
+                stringr::str_remove_all(Kurswebseite, "[<>]"), ")"
+            )
+        )
+    ) |>
+    dplyr::select(Status, Kurswebseite, Start, Ende, Bemerkung) |>
+    knitr::kable(escape = FALSE)
 
 ```
 
+:::

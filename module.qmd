@@ -3,9 +3,9 @@ execute:
     eval: true
 ---
 
-# Module 
+# Module {.unnumbered}
 
-Die folgenden 10 Module mit einer Dauer von 2.5 Stunden pro Modul werden über einen Zeitraum von 10 Wochen gelehrt. Eine detaillierte Beschreibung der Lernziele für jedes Modul ist auf der jeweiligen Kurswebseite verfügbar (siehe Kapitel [2 Kurse](kurse.qmd)).
+Die folgenden 10 Module mit einer Dauer von 2.5 Stunden pro Modul werden über einen Zeitraum von 10 Wochen gelehrt. Eine detaillierte Beschreibung der Lernziele für jedes Modul ist auf der jeweiligen Kurswebseite verfügbar (siehe [Kurse](kurse.qmd)).
 
 ```{r}
 readr::read_csv(file = here::here("data/tables/tbl-00-rstatszh-kursplan.csv")) |> 

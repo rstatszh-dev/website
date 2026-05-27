@@ -17,6 +17,7 @@ bibliography: rstatszh.bib
 
 format:
   html:
+    number-sections: false
     theme:
       light: [litera, theme.scss]
     link-external-icon: true
