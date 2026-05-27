@@ -246,3 +246,5 @@ Dies führt zu folgendem Zeitaufwand:
 
 Insgesamt wird von den Teilnehmer:innen ein Zeitaufwand von 65 Stunden
 erwartet.
+
+## Referenzen
