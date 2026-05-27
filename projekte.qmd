@@ -21,7 +21,7 @@ Sys.setlocale("LC_TIME", "de_DE.UTF-8")
 options(knitr.kable.NA = '')
 ```
 
-# Projekte {#sec-projekte}
+# Projekte {#sec-projekte .unnumbered}
 
 Das Abschlussprojekt ist ein fester Bestandteil des Kurses. Es umfasst einen Bericht zu einer Datenanalyse mit von den Teilnehmer:innen gewählten Daten. Das Projekt wird im Zeitraum des Kurses erstellt und begleitet. Für die gewählten Daten kommen bereits als OGD veröffentlichte Daten in Frage oder eigene Daten, welche, falls möglich, mitsamt des Berichtes veröffentlicht werden. 
 

@@ -1,3 +1,12 @@
+/*-- scss:defaults --*/
+
+// Brand sets body font via CSS custom property, but litera/bootstrap still
+// reads the Sass `$font-family` variable at compile time for some rules
+// (notably the `p` selector). Without this, paragraphs fall back to litera's
+// default and render in Source Code Pro instead of Atkinson Hyperlegible.
+$font-family: "Atkinson Hyperlegible", sans-serif;
+$font-family-serif: "Atkinson Hyperlegible", sans-serif;
+
 /*-- scss:rules --*/
 
 .highlight-peach {
@@ -13,4 +22,33 @@
 .highlight-pink {
   background-color: #FFC0CB;
   padding: 0.0em 0.1em;
+}
+
+.kurs-status {
+  display: inline-block;
+  padding: 0.1em 0.5em;
+  border-radius: 0.25rem;
+  font-size: 0.85em;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.kurs-status-laufend {
+  background-color: #2E7D32;
+  color: #ffffff;
+}
+
+.kurs-status-anmeldephase {
+  background-color: #C24A00;
+  color: #ffffff;
+}
+
+.kurs-status-abgeschlossen {
+  background-color: #e9ecef;
+  color: #495057;
+}
+
+.kurs-status-angekundigt {
+  background-color: #C8CEF3;
+  color: #1e1e1e;
 }
