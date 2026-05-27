@@ -16,14 +16,28 @@ options(knitr.kable.NA = '')
 Der Kurs besteht aus 10 Modulen von 2.5 Stunden pro Modul. Zusätzlich
 werden zwei Wochen für die Vorbereitung auf den Kurs und zwei Wochen für
 die Fertigstellung eines Abschlussprojektes angesetzt womit sich der
-gesamte Kurs über einen Zeitraum von 14 Wochen streckt. 
+gesamte Kurs über einen Zeitraum von 14 Wochen streckt.
+
+:::{.column-page}
 
 ```{r}
-#| tbl-colwidths: [15, 30, 55]
+#| tbl-colwidths: [12, 14, 14, 14, 32, 14]
 
-readr::read_csv(file = here::here("data/tables/tbl-01-rstatszh-kurse.csv")) |> 
-    dplyr::mutate(Start = format(Start, format = "%d %B %Y")) |> 
-    dplyr::mutate(Ende = format(Ende, format = "%d %B %Y")) |> 
-    knitr::kable()
+readr::read_csv(file = here::here("data/tables/tbl-01-rstatszh-kurse.csv")) |>
+    dplyr::mutate(
+        Start = format(Start, format = "%d %B %Y"),
+        Ende  = format(Ende,  format = "%d %B %Y"),
+        Kurswebseite = dplyr::if_else(
+            is.na(Kurswebseite) | Kurswebseite == "NA",
+            NA_character_,
+            paste0(
+                "[", tolower(Kurs), " ↗](",
+                stringr::str_remove_all(Kurswebseite, "[<>]"), ")"
+            )
+        )
+    ) |>
+    knitr::kable(escape = FALSE)
+
 ```
 
+:::

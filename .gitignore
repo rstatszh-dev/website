@@ -7,3 +7,7 @@
 /_site/
 /_book/
 # data/tables/tbl-02-rstatszh-projekte.csv
+
+**/*.quarto_ipynb
+.positai
+.secrets

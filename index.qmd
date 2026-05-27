@@ -4,6 +4,32 @@ editor:
     wrap: 72
 ---
 
+```{r}
+#| echo: false
+#| include: false
+Sys.setlocale("LC_TIME", "de_DE.UTF-8")
+```
+
+```{r}
+#| echo: false
+#| results: asis
+kurse <- readr::read_csv(
+  here::here("data/tables/tbl-01-rstatszh-kurse.csv"),
+  show_col_types = FALSE
+)
+offen <- dplyr::filter(kurse, Status == "anmeldephase")
+if (nrow(offen) > 0) {
+  kurs_id <- offen$Kurs[1]
+  start_de <- format(offen$Start[1], "%d. %B %Y")
+  kurs_url <- stringr::str_remove_all(offen$Kurswebseite[1], "[<>]")
+  anmeldung <- "https://www.zh.ch/de/politik-staat/statistik-daten/datenkompetenz/datenkompetenz-verwaltung/rstatszh-data-science-mit-r-anmelden.html"
+  cat(sprintf(
+    '::: {.callout-tip icon=false appearance="default"}\n## Anmeldung offen: %s (Start %s)\n\nDie Anmeldephase für den nächsten Kurs ist offen. [Zur Kursanmeldung beim Statistischen Amt](%s) · [Kurswebseite ansehen](%s)\n:::\n\n',
+    kurs_id, start_de, anmeldung, kurs_url
+  ))
+}
+```
+
 # Willkommen {.unnumbered}
 
 Willkommen zu rstatsZH - Data Science mit R. Dieser Kurs richtet sich an
